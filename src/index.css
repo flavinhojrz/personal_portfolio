@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Color System - Dark Mode Professional Developer Portfolio */
+  --color-background: rgb(10 12 16); 
+  --color-foreground: rgb(240 245 255);
+  
+  --color-card: rgb(18 22 30);
+  --color-card-foreground: rgb(240 245 255);
+  
+  --color-popover: rgb(18 22 30);
+  --color-popover-foreground: rgb(240 245 255);
+  
+  --color-primary: rgb(56 189 248);
+  --color-primary-foreground: rgb(10 12 16);
+  
+  --color-secondary: rgb(30 36 48);
+  --color-secondary-foreground: rgb(240 245 255);
+  
+  --color-muted: rgb(30 36 48);
+  --color-muted-foreground: rgb(148 163 184);
+  
+  --color-accent: rgb(99 102 241);
+  --color-accent-foreground: rgb(255 255 255);
+  
+  --color-destructive: rgb(239 68 68);
+  --color-destructive-foreground: rgb(255 255 255);
+  
+  --color-border: rgb(30 36 48);
+  --color-input: rgb(30 36 48);
+  --color-ring: rgb(56 189 248);
+  
+  --radius: 0.5rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-feature-settings: 'rlig' 1, 'calt' 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/50;
+}
+
+/* Code-inspired grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(to right, rgb(30 36 48 / 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(30 36 48 / 0.3) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Code snippet styles */
+.code-snippet {
+  @apply font-mono text-sm bg-secondary/50 border border-border rounded-lg p-4 overflow-x-auto;
+}
