@@ -12,6 +12,7 @@ import gmlife from "@/assets/gmlife.png"
 import bcr from "@/assets/bcr.png"
 import sloc from "@/assets/sloc.png"
 import fc from "@/assets/fc24.png"
+import todo_flask from "@/assets/todo_flask.png"
 
 export const projects: Project[] = [
   {
@@ -63,5 +64,15 @@ export const projects: Project[] = [
     tags: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
     github: "https://github.com/flavinhojrz/FIFA-Analysis-with-Data-Science",
     demo: null,
+  },
+  {
+    id: 6,
+    title: "Flask Task Manager",
+    description:
+      "Aplicação Web Fullstack para gerenciamento de tarefas. Implementa arquitetura MVC com Flask e SQLAlchemy, incluindo CRUD completo, sistema de busca, validação de formulários e deploy em produção.",
+    image: todo_flask, 
+    tags: ["Python", "Flask", "SQLAlchemy", "Fullstack"],
+    github: "https://github.com/flavinhojrz/todo_list_flask", 
+    demo: "https://flavinhojrz.pythonanywhere.com/",
   },
 ];
