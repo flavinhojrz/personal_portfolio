@@ -13,6 +13,7 @@ import bcr from "@/assets/bcr.png"
 import sloc from "@/assets/sloc.png"
 import fc from "@/assets/fc24.png"
 import todo_flask from "@/assets/todo_flask.png"
+import cv_craft from "@/assets/cv_craft.png"
 
 export const projects: Project[] = [
   {
@@ -74,5 +75,15 @@ export const projects: Project[] = [
     tags: ["Python", "Flask", "SQLAlchemy", "Fullstack"],
     github: "https://github.com/flavinhojrz/todo_list_flask", 
     demo: "https://flavinhojrz.pythonanywhere.com/",
+  },
+  {
+    id: 7,
+    title: "CV Craft",
+    description:
+      "Aplicação Full Stack que utiliza IA (Google Gemini) para personalizar currículos automaticamente com base em descrições de vagas. Gera PDFs otimizados via WeasyPrint em arquitetura containerizada com Docker.",
+    image: cv_craft,
+    tags: ["React", "TypeScript", "Python", "Flask", "Google Gemini", "Docker"],
+    github: "https://github.com/flavinhojrz/cv_craft_personal", 
+    demo: "https://cv-craft-personal.vercel.app/", 
   },
 ];
