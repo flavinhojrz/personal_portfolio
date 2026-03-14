@@ -14,6 +14,7 @@ import sloc from "@/assets/sloc.png"
 import fc from "@/assets/fc24.png"
 import todo_flask from "@/assets/todo_flask.png"
 import cv_craft from "@/assets/cv_craft.png"
+import pokedex from "@/assets/pokedex.png"
 
 export const projects: Project[] = [
   {
@@ -86,4 +87,14 @@ export const projects: Project[] = [
     github: "https://github.com/flavinhojrz/cv_craft_personal", 
     demo: "https://cv-craft-personal.vercel.app/", 
   },
+  {
+    id: 8,
+    title: "Pokedex App",
+    description:
+      "Aplicação Web Full Stack que consome a PokeAPI para exibir informações sobre Pokémon. Implementa busca, filtros e design responsivo com React e Tailwind CSS.",
+    image: pokedex,
+    tags: ["React", "TypeScript", "Tailwind CSS", "PokeAPI"],
+    github: "https://github.com/flavinhojrz/pokedex",
+    demo: "https://pokedex-web-ten.vercel.app/",
+  }
 ];
